@@ -29,5 +29,45 @@
         </nav>
     </header>
     
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">
+                Registro de Actividades:
+                <span class="hero__subtitle">Ingeniería de Software I</span>
+            </h1>
+
+            <p class="hero__description">
+                Registro de actividades y ejercicios resueltos durante la cursada.
+            </p>
+
+            <!-- HTML5 semántico para barras de progreso -->
+            <div class="progress-card">
+                <!-- Columna Izquierda: Métricas -->
+                <div class="progress-card__info">
+                    <span class="progress-card__title">Progreso general</span>
+                    
+                    <p class="progress-card__count">
+                        <span class="progress-card__current">4</span>
+                        <span class="progress-card__divider">/</span>
+                        <span class="progress-card__total">12</span>
+                    </p>
+
+                    <span class="progress-card__label">actividades resueltas</span>
+                </div>
+
+                <!-- Columna Derecha: Círculo de porcentaje -->
+                <div class="progress-card__chart" style="--porcentaje: 60%;">
+                    <span class="progress-card__percentage">33.3%</span>
+                </div>
+            </div>
+
+            <div class="hero__links">
+                <a class="hero__link hero__link--primary" href="#">Ver resoluciones grupales</a>
+                <a class="hero__link hero__link--secondary" href="#">Ver registros individuales</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
