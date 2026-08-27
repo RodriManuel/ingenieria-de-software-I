@@ -82,3 +82,117 @@
     background-color: rgb(207, 189, 189); 
     border-radius: 8px;
 }
+
+/*************************/
+main {
+    margin-top: 50px; 
+}
+
+/* Estilos del Hero */
+.hero {
+    padding: 0.5rem; 
+    background-image: url("../img/background-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__title {
+    color: white;
+    width: 50%;
+    margin: 0.35rem 0;
+}
+
+.hero__subtitle {
+    color: #a597ff;
+}
+
+.hero__description {
+    color: white;
+    width: 60%;
+}
+
+.hero__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+.hero__link {
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #a597ff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.hero__link--primary {
+    background-color: #a597ff;
+    color: #212436;
+}
+
+.hero__link--secondary {
+    border: 1px solid white;
+}
+
+.progress-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #2a2d42;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos de los números */
+.progress-card {
+    padding: 1rem; 
+    margin: 1rem 0;
+}
+
+.progress-card__current {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a597ff;
+}
+
+.progress-card__title,
+.progress-card__label {
+    color: #8b80e6;
+}
+
+.progress-card__divider,
+.progress-card__total {
+    font-size: 1.5rem;
+    color: #8b80e6;
+}
+
+.progress-card__chart {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* Crea el anillo usando el porcentaje de la variable HTML */
+    background: conic-gradient(#e9ecef var(--porcentaje), #a597ff 0);
+    display: grid;
+    place-items: center;
+}
+
+/* Recorte interno para hacer el dona/anillo */
+.progress-card__chart::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-color: #282e4a;
+    border-radius: 50%;
+}
+
+.progress-card__percentage {
+    position: relative; /* Lo posiciona sobre el ::before */
+    font-weight: bold;
+    color: #a597ff;
+}
